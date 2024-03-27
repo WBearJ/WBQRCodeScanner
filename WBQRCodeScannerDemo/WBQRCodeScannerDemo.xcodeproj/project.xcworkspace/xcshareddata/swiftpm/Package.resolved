@@ -1,0 +1,15 @@
+{
+  "originHash" : "723df6c1a41e0a1a3d5349178598832b0fb1decea121670562d404205c137ea4",
+  "pins" : [
+    {
+      "identity" : "wbqrcodescanner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/WBearJ/WBQRCodeScanner.git",
+      "state" : {
+        "branch" : "dev",
+        "revision" : "d8f5ad369b69b997bb79c9016302ec64cbcb3bdd"
+      }
+    }
+  ],
+  "version" : 3
+}
