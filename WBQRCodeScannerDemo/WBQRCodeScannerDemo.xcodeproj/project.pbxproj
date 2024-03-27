@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3712FE202BB4684E00EAAAC8 /* WBQRCodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 3712FE1F2BB4684E00EAAAC8 /* WBQRCodeScanner */; };
+		372FAAE62BB46BF0007D0F0B /* WBQRCodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 372FAAE52BB46BF0007D0F0B /* WBQRCodeScanner */; };
 		378D69F52BB418920021B7E6 /* WBQRCodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 378D69F42BB418920021B7E6 /* WBQRCodeScanner */; };
 		37AE35942BB415F000ADCB6B /* WBQRCodeScannerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE35932BB415F000ADCB6B /* WBQRCodeScannerDemoApp.swift */; };
 		37AE35962BB415F000ADCB6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE35952BB415F000ADCB6B /* ContentView.swift */; };
@@ -29,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3712FE202BB4684E00EAAAC8 /* WBQRCodeScanner in Frameworks */,
+				372FAAE62BB46BF0007D0F0B /* WBQRCodeScanner in Frameworks */,
 				378D69F52BB418920021B7E6 /* WBQRCodeScanner in Frameworks */,
 				37AE35AD2BB4184B00ADCB6B /* WBQRCodeScanner in Frameworks */,
 			);
@@ -92,7 +92,7 @@
 			packageProductDependencies = (
 				37AE35AC2BB4184B00ADCB6B /* WBQRCodeScanner */,
 				378D69F42BB418920021B7E6 /* WBQRCodeScanner */,
-				3712FE1F2BB4684E00EAAAC8 /* WBQRCodeScanner */,
+				372FAAE52BB46BF0007D0F0B /* WBQRCodeScanner */,
 			);
 			productName = WBQRCodeScannerDemo;
 			productReference = 37AE35902BB415F000ADCB6B /* WBQRCodeScannerDemo.app */;
@@ -123,7 +123,7 @@
 			);
 			mainGroup = 37AE35872BB415F000ADCB6B;
 			packageReferences = (
-				3712FE1E2BB4684E00EAAAC8 /* XCRemoteSwiftPackageReference "WBQRCodeScanner" */,
+				372FAAE42BB46BF0007D0F0B /* XCRemoteSwiftPackageReference "WBQRCodeScanner" */,
 			);
 			productRefGroup = 37AE35912BB415F000ADCB6B /* Products */;
 			projectDirPath = "";
@@ -362,7 +362,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3712FE1E2BB4684E00EAAAC8 /* XCRemoteSwiftPackageReference "WBQRCodeScanner" */ = {
+		372FAAE42BB46BF0007D0F0B /* XCRemoteSwiftPackageReference "WBQRCodeScanner" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WBearJ/WBQRCodeScanner.git";
 			requirement = {
@@ -373,9 +373,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3712FE1F2BB4684E00EAAAC8 /* WBQRCodeScanner */ = {
+		372FAAE52BB46BF0007D0F0B /* WBQRCodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3712FE1E2BB4684E00EAAAC8 /* XCRemoteSwiftPackageReference "WBQRCodeScanner" */;
+			package = 372FAAE42BB46BF0007D0F0B /* XCRemoteSwiftPackageReference "WBQRCodeScanner" */;
 			productName = WBQRCodeScanner;
 		};
 		378D69F42BB418920021B7E6 /* WBQRCodeScanner */ = {
