@@ -22,7 +22,7 @@ WBQRCodeSanner is a SwiftUI QR Code Scanner
 
 ## Requirements
 
-- iOS 15.0+
+- iOS 13.0+
 
 - Xcode 11.0+
 
@@ -47,8 +47,6 @@ Using Xcode 11, go to `File -> Swift Packages -> Add Package Dependency` and ent
 
 
 
-
-
 That's a basic example. use the default camera preview
 
 ```swift
@@ -59,28 +57,27 @@ struct ContentView: View {
     
     @State var results = [WBQRBarcodeResult]()
     
-    @State var qrcodeActive = false
-    
     var body: some View {
-        NavigationView {
-            VStack {
-                NavigationLink(
-                    destination: scannerView(),
-                    isActive: $qrcodeActive,
-                    label: {
-                        Text("QRCode Scan")
-                    })
+        NavigationStack {
+            NavigationLink {
+              WBQRScanner { results in
+                  self.results = results
+              }
+	          } label: {
+              Text("Default Scan Preview")
+  	        }
+         		
+          	// scan value
+            if !results.isEmpty {
+                // title
+                Text("Scan Result")
+                    .font(.title3)
+                    .padding(.top, 10)
+                // results
+                ForEach(results, id: \.stringValue) { result in
+                    Text("Result: \(result.stringValue ?? "")")
+                }
             }
-        }
-    }
-  
-    func scannerView() -> some View {
-        WBQRScanner {
-            // defalut preview
-            WBQRScanPreview(results: $results)
-        } scanResults: { results in
-            // do something with the results
-            qrcodeActive.toggle()
         }
     }
 }
@@ -101,6 +98,13 @@ func scannerView() -> some View {
   }
 }
 ```
+
+
+
+## Release Note
+
+* 0.0.1 - Basic functions
+* 0.0.2 - Improve usages, add photo album recognize function
 
 
 
