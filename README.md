@@ -92,9 +92,9 @@ func scannerView() -> some View {
   
   WBQRScanner {
     	// customize preview
-   	 	Text("you can customize preview here")
+	Text("you can customize preview here")
   } scanResults: { results in
-	    // do something with the results
+	// do something with the results
   }
 }
 ```
