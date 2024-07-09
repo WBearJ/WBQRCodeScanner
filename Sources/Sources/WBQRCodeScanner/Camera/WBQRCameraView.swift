@@ -14,6 +14,8 @@ final public class WBQRCameraView: UIView {
     public typealias ErrorMessage = (_ message: String) -> Void
     public typealias ScanResults = (_ results: [WBQRBarcodeResult]) -> Void
     
+    /// dismiss
+    var dismiss: (() -> Void)?
     /// Camera Config Error
     public var errorMessage: ErrorMessage
     /// scan result
@@ -25,6 +27,10 @@ final public class WBQRCameraView: UIView {
     private var captureSession: AVCaptureSession!
     // camera preview
     private var previewLayer: AVCaptureVideoPreviewLayer?
+    
+    var isRunning: Bool {
+        captureSession.isRunning
+    }
     
     convenience init(scanResluts: @escaping ScanResults, errorMessage: @escaping ErrorMessage) {
         self.init(frame: .zero, scanResluts: scanResluts, errorMessage: errorMessage)
@@ -136,6 +142,13 @@ extension WBQRCameraView: AVCaptureMetadataOutputObjectsDelegate {
             result.frame = previewLayer?.transformedMetadataObject(for: $0)?.bounds
             return result
         }
+        dismiss?()
         scanResults(results)
+    }
+}
+
+extension WBQRCameraView {
+    func stopRunning() {
+        captureSession.stopRunning()
     }
 }

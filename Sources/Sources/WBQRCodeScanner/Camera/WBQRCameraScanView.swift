@@ -8,14 +8,17 @@
 import Foundation
 import SwiftUI
 
-@available(iOS 15, *)
-struct WBQRScanView: UIViewRepresentable {
+@available(iOS 13, *)
+struct WBQRCameraScanView: UIViewRepresentable {
     
-    // scan result
+    @Environment(\.dismissable) private var dismiss
+    
+    /// scan result
     var scanResults: WBQRCameraView.ScanResults
     
-    // error message
+    /// error message
     @Binding var errorMessage: String?
+    
     
     typealias UIViewType = WBQRCameraView
     
@@ -25,11 +28,18 @@ struct WBQRScanView: UIViewRepresentable {
                 errorMessage = message
             }
         }
-
+        cameraView.dismiss = {
+            dismiss()
+        }
         return cameraView
     }
     
-    func updateUIView(_ uiView: WBQRCameraView, context: Context) {
+    func updateUIView(_ uiView: WBQRCameraView, context: Context) {}
+    
+    static func dismantleUIView(_ uiView: WBQRCameraView, coordinator: ()) {
+        if uiView.isRunning {
+            uiView.stopRunning()
+        }
     }
 }
 

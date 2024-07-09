@@ -3,20 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		372FAAE62BB46BF0007D0F0B /* WBQRCodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 372FAAE52BB46BF0007D0F0B /* WBQRCodeScanner */; };
-		378D69F52BB418920021B7E6 /* WBQRCodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 378D69F42BB418920021B7E6 /* WBQRCodeScanner */; };
+		37246F102C3CE6280056C618 /* CustomizePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37246F0F2C3CE6280056C618 /* CustomizePreview.swift */; };
+		37A01CF52C369DF700338B58 /* WBQRCodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 37A01CF42C369DF700338B58 /* WBQRCodeScanner */; };
 		37AE35942BB415F000ADCB6B /* WBQRCodeScannerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE35932BB415F000ADCB6B /* WBQRCodeScannerDemoApp.swift */; };
 		37AE35962BB415F000ADCB6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE35952BB415F000ADCB6B /* ContentView.swift */; };
 		37AE35982BB415F200ADCB6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37AE35972BB415F200ADCB6B /* Assets.xcassets */; };
 		37AE359B2BB415F200ADCB6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37AE359A2BB415F200ADCB6B /* Preview Assets.xcassets */; };
-		37AE35AD2BB4184B00ADCB6B /* WBQRCodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 37AE35AC2BB4184B00ADCB6B /* WBQRCodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37246F0F2C3CE6280056C618 /* CustomizePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizePreview.swift; sourceTree = "<group>"; };
 		37AE35902BB415F000ADCB6B /* WBQRCodeScannerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBQRCodeScannerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AE35932BB415F000ADCB6B /* WBQRCodeScannerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBQRCodeScannerDemoApp.swift; sourceTree = "<group>"; };
 		37AE35952BB415F000ADCB6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,9 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				372FAAE62BB46BF0007D0F0B /* WBQRCodeScanner in Frameworks */,
-				378D69F52BB418920021B7E6 /* WBQRCodeScanner in Frameworks */,
-				37AE35AD2BB4184B00ADCB6B /* WBQRCodeScanner in Frameworks */,
+				37A01CF52C369DF700338B58 /* WBQRCodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +57,7 @@
 			children = (
 				37AE35932BB415F000ADCB6B /* WBQRCodeScannerDemoApp.swift */,
 				37AE35952BB415F000ADCB6B /* ContentView.swift */,
+				37246F0F2C3CE6280056C618 /* CustomizePreview.swift */,
 				37AE35972BB415F200ADCB6B /* Assets.xcassets */,
 				37AE35992BB415F200ADCB6B /* Preview Content */,
 			);
@@ -90,9 +89,7 @@
 			);
 			name = WBQRCodeScannerDemo;
 			packageProductDependencies = (
-				37AE35AC2BB4184B00ADCB6B /* WBQRCodeScanner */,
-				378D69F42BB418920021B7E6 /* WBQRCodeScanner */,
-				372FAAE52BB46BF0007D0F0B /* WBQRCodeScanner */,
+				37A01CF42C369DF700338B58 /* WBQRCodeScanner */,
 			);
 			productName = WBQRCodeScannerDemo;
 			productReference = 37AE35902BB415F000ADCB6B /* WBQRCodeScannerDemo.app */;
@@ -123,7 +120,7 @@
 			);
 			mainGroup = 37AE35872BB415F000ADCB6B;
 			packageReferences = (
-				372FAAE42BB46BF0007D0F0B /* XCRemoteSwiftPackageReference "WBQRCodeScanner" */,
+				37A01CF32C369DF700338B58 /* XCLocalSwiftPackageReference "../Sources" */,
 			);
 			productRefGroup = 37AE35912BB415F000ADCB6B /* Products */;
 			projectDirPath = "";
@@ -151,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37246F102C3CE6280056C618 /* CustomizePreview.swift in Sources */,
 				37AE35962BB415F000ADCB6B /* ContentView.swift in Sources */,
 				37AE35942BB415F000ADCB6B /* WBQRCodeScannerDemoApp.swift in Sources */,
 			);
@@ -211,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -268,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -288,6 +286,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WBQRCodeScannerDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = WKH6Q72B79;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = QRScan;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +294,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,6 +318,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WBQRCodeScannerDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = WKH6Q72B79;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = QRScan;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -325,6 +326,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,28 +363,15 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		372FAAE42BB46BF0007D0F0B /* XCRemoteSwiftPackageReference "WBQRCodeScanner" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/WBearJ/WBQRCodeScanner.git";
-			requirement = {
-				branch = dev;
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		37A01CF32C369DF700338B58 /* XCLocalSwiftPackageReference "../Sources" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Sources;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		372FAAE52BB46BF0007D0F0B /* WBQRCodeScanner */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 372FAAE42BB46BF0007D0F0B /* XCRemoteSwiftPackageReference "WBQRCodeScanner" */;
-			productName = WBQRCodeScanner;
-		};
-		378D69F42BB418920021B7E6 /* WBQRCodeScanner */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = WBQRCodeScanner;
-		};
-		37AE35AC2BB4184B00ADCB6B /* WBQRCodeScanner */ = {
+		37A01CF42C369DF700338B58 /* WBQRCodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WBQRCodeScanner;
 		};

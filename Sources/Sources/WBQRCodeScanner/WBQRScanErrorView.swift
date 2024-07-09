@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-@available(iOS 15, *)
+@available(iOS 13, *)
 struct WBQRScanErrorView: View {
     
-    @Environment(\.dismiss) var dismiss
+//    @Environment(\.dismiss) var dismiss
     
     var errorMessage: String
     
@@ -21,7 +21,7 @@ struct WBQRScanErrorView: View {
             VStack {
                 HStack {
                     Button {
-                         dismiss()
+//                         dismiss()
                     } label: {
                         Image(systemName: "chevron.backward")
                             .frame(width: 30, height: 30)

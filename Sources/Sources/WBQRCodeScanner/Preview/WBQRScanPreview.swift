@@ -8,18 +8,17 @@
 import SwiftUI
 import Foundation
 
-@available(iOS 15, *)
+@available(iOS 13, *)
 public struct WBQRScanPreview: View {
     
-    public init(results: Binding<[WBQRBarcodeResult]>) {
-        self._results = results
-    }
+    // init
+    public init() {}
     
-    @Environment(\.dismiss) private var dismiss
+    /// dismiss
+    @Environment(\.dismissable) private var dismiss
     
-    @State var lineOffsetY: CGFloat?
-    
-    @Binding var results: [WBQRBarcodeResult]
+    /// animated line
+    @State private var lineOffsetY: CGFloat?
     
     public var body: some View {
         GeometryReader { geometry in
@@ -52,11 +51,13 @@ public struct WBQRScanPreview: View {
                     }
                 
                 Spacer()
+                
+                HStack {
+                    WBQRPhotoPickerView()
+                }
+                .padding(.bottom, 20)
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
-            .onChange(of: results) { results in
-                dismiss()
-            }
         }
     }
 }
