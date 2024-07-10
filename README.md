@@ -7,7 +7,7 @@
 		<img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg"/>
 </p>
 
-WBQRCodeSanner is a SwiftUI QR Code Scanner
+WBQRCodeSanner is QR Code Scanner in SwiftUI
 
 
 
